@@ -241,49 +241,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20190724205735_Inicial.cs" />
-    <Compile Include="Migrations\20190724205735_Inicial.designer.cs">
-      <DependentUpon>20190724205735_Inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190724205940_dbo.cs" />
-    <Compile Include="Migrations\20190724205940_dbo.designer.cs">
-      <DependentUpon>20190724205940_dbo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190724210130_dbo.pessoas.cs" />
-    <Compile Include="Migrations\20190724210130_dbo.pessoas.designer.cs">
-      <DependentUpon>20190724210130_dbo.pessoas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190725180809_cliente.cs" />
-    <Compile Include="Migrations\20190725180809_cliente.designer.cs">
-      <DependentUpon>20190725180809_cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190725182302_F.cs" />
-    <Compile Include="Migrations\20190725182302_F.designer.cs">
-      <DependentUpon>20190725182302_F.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190725182928_Vendas.cs" />
-    <Compile Include="Migrations\20190725182928_Vendas.designer.cs">
-      <DependentUpon>20190725182928_Vendas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190725183430_VendaItem.cs" />
-    <Compile Include="Migrations\20190725183430_VendaItem.designer.cs">
-      <DependentUpon>20190725183430_VendaItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190725183736_Compras.cs" />
-    <Compile Include="Migrations\20190725183736_Compras.designer.cs">
-      <DependentUpon>20190725183736_Compras.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190725184203_CompraItem.cs" />
-    <Compile Include="Migrations\20190725184203_CompraItem.designer.cs">
-      <DependentUpon>20190725184203_CompraItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190725184500_Prod.cs" />
-    <Compile Include="Migrations\20190725184500_Prod.designer.cs">
-      <DependentUpon>20190725184500_Prod.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190726190814_p1.cs" />
-    <Compile Include="Migrations\20190726190814_p1.designer.cs">
-      <DependentUpon>20190726190814_p1.cs</DependentUpon>
+    <Compile Include="Migrations\20190729113226_inicial.cs" />
+    <Compile Include="Migrations\20190729113226_inicial.designer.cs">
+      <DependentUpon>20190729113226_inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\LojaContextModelSnapshot.cs" />
     <Compile Include="Models\Clientes.cs" />

@@ -8,8 +8,8 @@ using WebLoja2.Context;
 namespace LojaWeb.Migrations
 {
     [DbContext(typeof(LojaContext))]
-    [Migration("20190725184203_CompraItem")]
-    partial class CompraItem
+    [Migration("20190729113226_inicial")]
+    partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -44,6 +44,8 @@ namespace LojaWeb.Migrations
 
                     b.Property<string>("Observacoes");
 
+                    b.Property<int?>("ProdutoId");
+
                     b.Property<double>("Valor");
 
                     b.HasKey("Id");
@@ -51,6 +53,8 @@ namespace LojaWeb.Migrations
                     b.HasIndex("FornecedorId");
 
                     b.HasIndex("FuncionarioId");
+
+                    b.HasIndex("ProdutoId");
 
                     b.ToTable("Compras");
                 });
@@ -198,6 +202,8 @@ namespace LojaWeb.Migrations
 
                     b.Property<int?>("FuncionarioId");
 
+                    b.Property<int?>("ProdutoId");
+
                     b.Property<double>("Valor");
 
                     b.HasKey("Id");
@@ -205,6 +211,8 @@ namespace LojaWeb.Migrations
                     b.HasIndex("ClienteId");
 
                     b.HasIndex("FuncionarioId");
+
+                    b.HasIndex("ProdutoId");
 
                     b.ToTable("Vendas");
                 });
@@ -244,6 +252,10 @@ namespace LojaWeb.Migrations
                     b.HasOne("WebLoja2.Models.Funcionario", "Funcionario")
                         .WithMany()
                         .HasForeignKey("FuncionarioId");
+
+                    b.HasOne("WebLoja2.Models.Produtos", "Produto")
+                        .WithMany()
+                        .HasForeignKey("ProdutoId");
                 });
 
             modelBuilder.Entity("WebLoja2.Models.CompraItem", b =>
@@ -266,6 +278,10 @@ namespace LojaWeb.Migrations
                     b.HasOne("WebLoja2.Models.Funcionario", "Funcionario")
                         .WithMany()
                         .HasForeignKey("FuncionarioId");
+
+                    b.HasOne("WebLoja2.Models.Produtos", "Produto")
+                        .WithMany()
+                        .HasForeignKey("ProdutoId");
                 });
 
             modelBuilder.Entity("WebLoja2.Models.VendaItem", b =>

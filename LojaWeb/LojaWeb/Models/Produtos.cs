@@ -6,11 +6,11 @@ namespace WebLoja2.Models
 {
     public class Produtos
     {
-        public int Id { get; set; }
+        public int Id { get; internal set; }
 
-        public string Modelo { get; set; }
+        public string Modelo { get; internal set; }
 
-        public string Nome { get; set; }
+        public string Nome { get;  internal set; }        
 
         public float Valor { get; set; }
 
@@ -22,44 +22,7 @@ namespace WebLoja2.Models
 
         public int Tipo { get; set; }
 
-
-        public void Adicionar(Produtos produto)
-        {
-            using (var context = new LojaContext())
-            {
-                context.Produtos.Add(produto);
-
-                context.SaveChanges();
-            }
-        }
-        public void Atualizar(Produtos produtos)
-        {
-            using (var context = new LojaContext())
-            {
-                context.Produtos.Update(produtos);
-                context.SaveChanges();
-            }
-
-        }
-        public IList<Produtos> Lista()
-        {
-            using (var contexto = new LojaContext())
-            {
-                return contexto.Produtos.ToList();
-            }
-        }
-
-
-        public void Excluir(Produtos pais)
-        {
-            using (var context = new LojaContext())
-            {
-                context.Produtos.Remove(pais);
-                context.SaveChanges();
-            }
-        }
-
-
+        
     }
 }
 
