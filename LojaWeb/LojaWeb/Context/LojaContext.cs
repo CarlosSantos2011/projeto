@@ -14,12 +14,12 @@ namespace WebLoja2.Context
         public DbSet<Produtos> Produtos { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Contatos> Contatos { get; set; }
-        public DbSet<Clientes> Clientes { get; set; }
+        public DbSet<Venda> Clientes { get; set; }
         public DbSet<Fornecedor> Fornecedor { get; set; }
         public DbSet<Funcionario> Funcionario { get; set; }
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<VendaItem> ItensVendidos { get; set; }
-        public DbSet<Compra> Compras { get; set; }
+        public DbSet<Fornecedor> Compras { get; set; }
         public DbSet<CompraItem> ItensComprados { get; set; }
        
         

@@ -12,7 +12,7 @@ namespace WebLoja2.Models
 
         public string Nome { get;  internal set; }        
 
-        public float Valor { get; set; }
+        public double Valor { get; set; }
 
         public int TempoGarantia { get; set; }
 
@@ -20,7 +20,7 @@ namespace WebLoja2.Models
 
         public int Quantidade { get; set; }
 
-        public int Tipo { get; set; }
+        public string Categoria { get; set; }
 
         
     }

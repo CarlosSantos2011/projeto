@@ -8,7 +8,7 @@ using WebLoja2.Context;
 namespace LojaWeb.Migrations
 {
     [DbContext(typeof(LojaContext))]
-    [Migration("20190729113226_inicial")]
+    [Migration("20190729171227_inicial")]
     partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -168,6 +168,8 @@ namespace LojaWeb.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Categoria");
+
                     b.Property<string>("Descricao");
 
                     b.Property<string>("Modelo");
@@ -178,9 +180,7 @@ namespace LojaWeb.Migrations
 
                     b.Property<int>("TempoGarantia");
 
-                    b.Property<int>("Tipo");
-
-                    b.Property<float>("Valor");
+                    b.Property<double>("Valor");
 
                     b.HasKey("Id");
 

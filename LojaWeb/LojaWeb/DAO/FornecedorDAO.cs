@@ -5,45 +5,44 @@ using System.Web;
 using WebLoja2.Context;
 using WebLoja2.Models;
 
-namespace WebLoja2.DAO
+namespace LojaWeb.DAO
 {
-    public class ClientesDAO
+    public class FornecedorDAO
     {
-        public void Adicionar(Venda clientes)
+        public void Adicionar(Fornecedor fornecedor)
         {
             using (var context = new LojaContext())
             {
-                context.Clientes.Add(clientes);
+                context.Fornecedor.Add(fornecedor);
 
                 context.SaveChanges();
             }
         }
-        public void Atualizar(Venda clientes)
+        public void Atualizar(Fornecedor fornecedor)
         {
             using (var context = new LojaContext())
             {
-                context.Clientes.Update(clientes);
+                context.Fornecedor.Update(fornecedor);
                 context.SaveChanges();
             }
 
         }
-        public IList<Venda> Lista()
+        public IList<Fornecedor> Lista()
         {
             using (var contexto = new LojaContext())
             {
-                return contexto.Clientes.ToList();
+                return contexto.Fornecedor.ToList();
             }
         }
 
 
-        public void Excluir(Venda clientes)
+        public void Excluir(Fornecedor fornecedor)
         {
             using (var context = new LojaContext())
             {
-                context.Clientes.Remove(clientes);
+                context.Fornecedor.Remove(fornecedor);
                 context.SaveChanges();
             }
         }
     }
-
 }

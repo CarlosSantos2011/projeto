@@ -11,7 +11,7 @@ namespace WebLoja2.Models
 
         public Produtos Produtos { get;  set; }
 
-        public Compra Compra { get;  set; }
+        public Fornecedor Compra { get;  set; }
         public Venda Venda { get;  set; }
         public int Saida { get;  set; }
         public int Entrada { get;  set; }
@@ -20,7 +20,7 @@ namespace WebLoja2.Models
 
         
 
-        public Estoque(Produtos produto, Compra compra, Venda venda, int saida, int entrada, bool garantia, string tipoMovimentacao)
+        public Estoque(Produtos produto, Fornecedor compra, Venda venda, int saida, int entrada, bool garantia, string tipoMovimentacao)
 
 
         {

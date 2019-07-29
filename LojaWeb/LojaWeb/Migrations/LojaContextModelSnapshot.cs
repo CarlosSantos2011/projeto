@@ -167,6 +167,8 @@ namespace LojaWeb.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Categoria");
+
                     b.Property<string>("Descricao");
 
                     b.Property<string>("Modelo");
@@ -177,9 +179,7 @@ namespace LojaWeb.Migrations
 
                     b.Property<int>("TempoGarantia");
 
-                    b.Property<int>("Tipo");
-
-                    b.Property<float>("Valor");
+                    b.Property<double>("Valor");
 
                     b.HasKey("Id");
 

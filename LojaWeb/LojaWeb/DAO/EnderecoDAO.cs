@@ -5,45 +5,44 @@ using System.Web;
 using WebLoja2.Context;
 using WebLoja2.Models;
 
-namespace WebLoja2.DAO
+namespace LojaWeb.DAO
 {
-    public class ClientesDAO
+    public class EnderecoDAO
     {
-        public void Adicionar(Venda clientes)
+        public void Adicionar(Endereco endereco)
         {
             using (var context = new LojaContext())
             {
-                context.Clientes.Add(clientes);
+                context.Enderecos.Add(endereco);
 
                 context.SaveChanges();
             }
         }
-        public void Atualizar(Venda clientes)
+        public void Atualizar(Endereco endereco)
         {
             using (var context = new LojaContext())
             {
-                context.Clientes.Update(clientes);
+                context.Enderecos.Update(endereco);
                 context.SaveChanges();
             }
 
         }
-        public IList<Venda> Lista()
+        public IList<Endereco> Lista()
         {
             using (var contexto = new LojaContext())
             {
-                return contexto.Clientes.ToList();
+                return contexto.Enderecos.ToList();
             }
         }
 
 
-        public void Excluir(Venda clientes)
+        public void Excluir(Endereco endereco)
         {
             using (var context = new LojaContext())
             {
-                context.Clientes.Remove(clientes);
+                context.Enderecos.Remove(endereco);
                 context.SaveChanges();
             }
         }
     }
-
 }

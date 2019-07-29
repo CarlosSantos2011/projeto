@@ -7,7 +7,7 @@ namespace WebLoja2.Models
 {
     public class CompraItem
     {
-        public Compra Compra { get;  set; }
+        public Fornecedor Compra { get;  set; }
 
         public Produtos Produtos { get;  set; }
 
@@ -18,7 +18,7 @@ namespace WebLoja2.Models
         public double ValorTotal { get;  set; }
 
 
-        public CompraItem(Compra compra, Produtos produtos, int quantidade, float valorUnitario, double valorTotal)
+        public CompraItem(Fornecedor compra, Produtos produtos, int quantidade, float valorUnitario, double valorTotal)
 
         {
             compra = Compra;

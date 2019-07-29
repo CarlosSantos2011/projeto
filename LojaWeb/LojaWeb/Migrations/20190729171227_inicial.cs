@@ -96,13 +96,13 @@ namespace LojaWeb.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Categoria = table.Column<string>(nullable: true),
                     Descricao = table.Column<string>(nullable: true),
                     Modelo = table.Column<string>(nullable: true),
                     Nome = table.Column<string>(nullable: true),
                     Quantidade = table.Column<int>(nullable: false),
                     TempoGarantia = table.Column<int>(nullable: false),
-                    Tipo = table.Column<int>(nullable: false),
-                    Valor = table.Column<float>(nullable: false)
+                    Valor = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
                 {

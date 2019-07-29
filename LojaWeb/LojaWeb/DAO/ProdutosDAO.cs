@@ -37,11 +37,11 @@ namespace WebLoja2.DAO
         }
 
 
-        public void Excluir(Produtos pais)
+        public void Excluir(Produtos produtos)
         {
             using (var context = new LojaContext())
             {
-                context.Produtos.Remove(pais);
+                context.Produtos.Remove(produtos);
                 context.SaveChanges();
             }
         }

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WebLoja2.Models
 {
-    public class Compra
+    public class Fornecedor
     {
         public int Id { get;  set; }
         public string Observacoes { get;  set; }
@@ -14,7 +14,7 @@ namespace WebLoja2.Models
         public double Valor { get;  set; }
         public Funcionario Funcionario { get; set; }
         public Produtos Produto { get; set; }
-        public Compra(int id, Fornecedor fornecedor, Funcionario funcionario, DateTime data, double valor)
+        public Fornecedor(int id, Fornecedor fornecedor, Funcionario funcionario, DateTime data, double valor)
         {
             Id = id;
             Fornecedor = fornecedor;
