@@ -19,7 +19,6 @@ body{
     top:20%;
     left:40%;
     position: absolute;
-    transform:translate (-50%, -50%);
     box-sizing: border-box;
     padding: 68px 28px;
     
@@ -73,7 +72,8 @@ h1{
    
 }
     
-}
+    
+
 .login a{
     font-weight: bold;
     text-decoration: none;

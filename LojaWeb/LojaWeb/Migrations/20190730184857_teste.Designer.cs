@@ -8,9 +8,10 @@ using WebLoja2.Context;
 namespace LojaWeb.Migrations
 {
     [DbContext(typeof(LojaContext))]
-    partial class LojaContextModelSnapshot : ModelSnapshot
+    [Migration("20190730184857_teste")]
+    partial class teste
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -121,15 +122,11 @@ namespace LojaWeb.Migrations
 
                     b.Property<string>("Cpf");
 
-                    b.Property<DateTime>("DataDeNascimento");
-
-                    b.Property<string>("Login");
+                    b.Property<DateTime>("DataDataDeNascimento");
 
                     b.Property<string>("Nome");
 
                     b.Property<string>("NumeroCarteiraDeTrabalho");
-
-                    b.Property<string>("Senha");
 
                     b.Property<string>("Sexo");
 

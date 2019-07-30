@@ -44,5 +44,12 @@ namespace WebLoja2.DAO
                 context.SaveChanges();
             }
         }
+        public Funcionario Busca(string login, string senha)
+        {
+            using (var contexto = new LojaContext())
+            {
+                return contexto.Funcionario.FirstOrDefault(u => u.Nome == login && u.Senha == senha);
+            }
+        }
     }
 }

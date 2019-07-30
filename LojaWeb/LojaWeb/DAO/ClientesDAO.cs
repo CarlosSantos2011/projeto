@@ -9,7 +9,7 @@ namespace WebLoja2.DAO
 {
     public class ClientesDAO
     {
-        public void Adicionar(Venda clientes)
+        public void Adicionar(Clientes clientes)
         {
             using (var context = new LojaContext())
             {
@@ -18,7 +18,7 @@ namespace WebLoja2.DAO
                 context.SaveChanges();
             }
         }
-        public void Atualizar(Venda clientes)
+        public void Atualizar(Clientes clientes)
         {
             using (var context = new LojaContext())
             {
@@ -27,7 +27,7 @@ namespace WebLoja2.DAO
             }
 
         }
-        public IList<Venda> Lista()
+        public IList<Clientes> Lista()
         {
             using (var contexto = new LojaContext())
             {
@@ -36,7 +36,7 @@ namespace WebLoja2.DAO
         }
 
 
-        public void Excluir(Venda clientes)
+        public void Excluir(Clientes clientes)
         {
             using (var context = new LojaContext())
             {

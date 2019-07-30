@@ -22,14 +22,20 @@ namespace WebLoja2.Controllers
 
 
                 ClientesDAO cliente = new ClientesDAO();
-                cliente.Adicionar(new Venda { Nome = "Carlos", Cpf = "124.487.479-54" });
+                cliente.Adicionar(new Models.Clientes { Nome = "Carlos", Cpf = "124.487.479-54" });
                 var Cliente = cliente.Lista().First();
 
 
                 ClientesDAO cliente2 = new ClientesDAO();
-                cliente.Adicionar(new Venda { Nome = "Diego", Cpf = "054.487.929-52" });
+                cliente2.Adicionar(new Models.Clientes { Nome = "Diego", Cpf = "054.487.929-52" });
                 var Cliente2= cliente.Lista().First();
 
+
+                FuncionariosDAO funcionario = new FuncionariosDAO();
+                funcionario.Adicionar(new Models.Funcionario { Nome = "Carlos", Login = "Carlos123", Senha = "123" });
+                var Funcionario = funcionario.Lista().First();
+               
+                
 
             };
             

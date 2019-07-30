@@ -7,45 +7,45 @@ using WebLoja2.Models;
 
 namespace WebLoja2.DAO
 {
-    public class VendaDAO
-    {
+    //public class VendaDAO
+    //{
         
-            public void Adicionar(Venda venda)
-            {
-                using (var context = new LojaContext())
-                {
-                    context.Vendas.Add(venda);
+    //        public void Adicionar(Venda venda)
+    //        {
+    //            using (var context = new LojaContext())
+    //            {
+    //                context.Vendas.Add(venda);
 
-                    context.SaveChanges();
-                }
-            }
-            public void Atualizar(Venda venda)
-            {
-                using (var context = new LojaContext())
-                {
-                    context.Vendas.Update(venda);
-                    context.SaveChanges();
-                }
+    //                context.SaveChanges();
+    //            }
+    //        }
+    //        public void Atualizar(Venda venda)
+    //        {
+    //            using (var context = new LojaContext())
+    //            {
+    //                context.Vendas.Update(venda);
+    //                context.SaveChanges();
+    //            }
 
-            }
-            public IList<Venda> Lista()
-            {
-                using (var contexto = new LojaContext())
-                {
-                    return contexto.Vendas.ToList();
-                }
-            }
+    //        }
+    //        public IList<Venda> Lista()
+    //        {
+    //            using (var contexto = new LojaContext())
+    //            {
+    //                return contexto.Vendas.ToList();
+    //            }
+    //        }
 
 
-            public void Excluir(Venda venda)
-            {
-                using (var context = new LojaContext())
-                {
-                    context.Vendas.Remove(venda);
-                    context.SaveChanges();
-                }
-            }
+    //        public void Excluir(Venda venda)
+    //        {
+    //            using (var context = new LojaContext())
+    //            {
+    //                context.Vendas.Remove(venda);
+    //                context.SaveChanges();
+    //            }
+    //        }
         
 
-    }
+    //}
 }

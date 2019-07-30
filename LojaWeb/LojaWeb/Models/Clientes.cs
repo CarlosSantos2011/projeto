@@ -6,7 +6,7 @@ using System.Web;
 
 namespace WebLoja2.Models
 {
-    public class Venda : Pessoa
+    public class Clientes : Pessoa
     {
         
         public string Cpf { get;  set; }            
