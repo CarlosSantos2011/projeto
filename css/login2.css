@@ -1,8 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(iphone-x.png);
-    background-size:cover;
+    background-image:  url(og_overview.png);
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-size: cover;
     font-family: "Comfortaa", sans-serif;
     
             
