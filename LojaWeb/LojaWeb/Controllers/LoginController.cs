@@ -23,7 +23,7 @@ namespace WebLoja2.Controllers
             if (funcionario != null)
             {
                 Session["usuarioLogado"] = funcionario;
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Modulos");
 
             }
             else
