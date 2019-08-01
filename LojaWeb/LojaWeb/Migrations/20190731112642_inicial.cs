@@ -80,9 +80,11 @@ namespace LojaWeb.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Cpf = table.Column<string>(nullable: true),
-                    DataDataDeNascimento = table.Column<DateTime>(nullable: false),
+                    DataDeNascimento = table.Column<DateTime>(nullable: false),
+                    Login = table.Column<string>(nullable: true),
                     Nome = table.Column<string>(nullable: true),
                     NumeroCarteiraDeTrabalho = table.Column<string>(nullable: true),
+                    Senha = table.Column<string>(nullable: true),
                     Sexo = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -110,36 +112,30 @@ namespace LojaWeb.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Compras",
+                name: "ItensComprados",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Data = table.Column<DateTime>(nullable: false),
-                    FornecedorId = table.Column<int>(nullable: true),
-                    FuncionarioId = table.Column<int>(nullable: true),
-                    Observacoes = table.Column<string>(nullable: true),
-                    ProdutoId = table.Column<int>(nullable: true),
-                    Valor = table.Column<double>(nullable: false)
+                    CompraId = table.Column<int>(nullable: true),
+                    DescontoPorItem = table.Column<double>(nullable: false),
+                    ProdutosId = table.Column<int>(nullable: true),
+                    Quantidade = table.Column<int>(nullable: false),
+                    ValorTotal = table.Column<double>(nullable: false),
+                    ValorUnitario = table.Column<float>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Compras", x => x.Id);
+                    table.PrimaryKey("PK_ItensComprados", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Compras_Fornecedor_FornecedorId",
-                        column: x => x.FornecedorId,
+                        name: "FK_ItensComprados_Fornecedor_CompraId",
+                        column: x => x.CompraId,
                         principalTable: "Fornecedor",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Compras_Funcionario_FuncionarioId",
-                        column: x => x.FuncionarioId,
-                        principalTable: "Funcionario",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Compras_Produtos_ProdutoId",
-                        column: x => x.ProdutoId,
+                        name: "FK_ItensComprados_Produtos_ProdutosId",
+                        column: x => x.ProdutosId,
                         principalTable: "Produtos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -183,36 +179,6 @@ namespace LojaWeb.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ItensComprados",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    CompraId = table.Column<int>(nullable: true),
-                    DescontoPorItem = table.Column<double>(nullable: false),
-                    ProdutosId = table.Column<int>(nullable: true),
-                    Quantidade = table.Column<int>(nullable: false),
-                    ValorTotal = table.Column<double>(nullable: false),
-                    ValorUnitario = table.Column<float>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ItensComprados", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_ItensComprados_Compras_CompraId",
-                        column: x => x.CompraId,
-                        principalTable: "Compras",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_ItensComprados_Produtos_ProdutosId",
-                        column: x => x.ProdutosId,
-                        principalTable: "Produtos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ItensVendidos",
                 columns: table => new
                 {
@@ -241,21 +207,6 @@ namespace LojaWeb.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Compras_FornecedorId",
-                table: "Compras",
-                column: "FornecedorId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Compras_FuncionarioId",
-                table: "Compras",
-                column: "FuncionarioId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Compras_ProdutoId",
-                table: "Compras",
-                column: "ProdutoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ItensComprados_CompraId",
@@ -308,13 +259,10 @@ namespace LojaWeb.Migrations
                 name: "ItensVendidos");
 
             migrationBuilder.DropTable(
-                name: "Compras");
+                name: "Fornecedor");
 
             migrationBuilder.DropTable(
                 name: "Vendas");
-
-            migrationBuilder.DropTable(
-                name: "Fornecedor");
 
             migrationBuilder.DropTable(
                 name: "Clientes");
