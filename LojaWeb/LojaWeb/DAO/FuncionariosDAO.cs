@@ -44,11 +44,11 @@ namespace WebLoja2.DAO
                 context.SaveChanges();
             }
         }
-        public Funcionario Busca(string login, string senha)
+        public Funcionario Busca(string Login, string Senha)
         {
             using (var contexto = new LojaContext())
             {
-                return contexto.Funcionario.FirstOrDefault(u => u.Nome == login && u.Senha == senha);
+                return contexto.Funcionario.FirstOrDefault(u => u.Nome == Login && u.Senha == Senha);
             }
         }
     }
