@@ -8,7 +8,7 @@ using WebLoja2.Context;
 namespace LojaWeb.Migrations
 {
     [DbContext(typeof(LojaContext))]
-    [Migration("20190729171227_inicial")]
+    [Migration("20190731112642_inicial")]
     partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,34 +29,6 @@ namespace LojaWeb.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Clientes");
-                });
-
-            modelBuilder.Entity("WebLoja2.Models.Compra", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<DateTime>("Data");
-
-                    b.Property<int?>("FornecedorId");
-
-                    b.Property<int?>("FuncionarioId");
-
-                    b.Property<string>("Observacoes");
-
-                    b.Property<int?>("ProdutoId");
-
-                    b.Property<double>("Valor");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("FornecedorId");
-
-                    b.HasIndex("FuncionarioId");
-
-                    b.HasIndex("ProdutoId");
-
-                    b.ToTable("Compras");
                 });
 
             modelBuilder.Entity("WebLoja2.Models.CompraItem", b =>
@@ -150,11 +122,15 @@ namespace LojaWeb.Migrations
 
                     b.Property<string>("Cpf");
 
-                    b.Property<DateTime>("DataDataDeNascimento");
+                    b.Property<DateTime>("DataDeNascimento");
+
+                    b.Property<string>("Login");
 
                     b.Property<string>("Nome");
 
                     b.Property<string>("NumeroCarteiraDeTrabalho");
+
+                    b.Property<string>("Senha");
 
                     b.Property<string>("Sexo");
 
@@ -243,24 +219,9 @@ namespace LojaWeb.Migrations
                     b.ToTable("ItensVendidos");
                 });
 
-            modelBuilder.Entity("WebLoja2.Models.Compra", b =>
-                {
-                    b.HasOne("WebLoja2.Models.Fornecedor", "Fornecedor")
-                        .WithMany()
-                        .HasForeignKey("FornecedorId");
-
-                    b.HasOne("WebLoja2.Models.Funcionario", "Funcionario")
-                        .WithMany()
-                        .HasForeignKey("FuncionarioId");
-
-                    b.HasOne("WebLoja2.Models.Produtos", "Produto")
-                        .WithMany()
-                        .HasForeignKey("ProdutoId");
-                });
-
             modelBuilder.Entity("WebLoja2.Models.CompraItem", b =>
                 {
-                    b.HasOne("WebLoja2.Models.Compra", "Compra")
+                    b.HasOne("WebLoja2.Models.Fornecedor", "Compra")
                         .WithMany()
                         .HasForeignKey("CompraId");
 

@@ -223,8 +223,10 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dashboard.js" />
     <Content Include="Content\jquery.js" />
     <Content Include="Content\login2.css" />
+    <Content Include="Content\materialize.min.js" />
     <Content Include="Content\modulo.css" />
     <Content Include="Content\pessoas.css" />
     <Content Include="Content\pessoas.js" />
@@ -291,17 +293,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20190729171227_inicial.cs" />
-    <Compile Include="Migrations\20190729171227_inicial.designer.cs">
-      <DependentUpon>20190729171227_inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190730184857_teste.cs" />
-    <Compile Include="Migrations\20190730184857_teste.designer.cs">
-      <DependentUpon>20190730184857_teste.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190730194255_teste2.cs" />
-    <Compile Include="Migrations\20190730194255_teste2.designer.cs">
-      <DependentUpon>20190730194255_teste2.cs</DependentUpon>
+    <Compile Include="Migrations\20190731112642_inicial.cs" />
+    <Compile Include="Migrations\20190731112642_inicial.designer.cs">
+      <DependentUpon>20190731112642_inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\LojaContextModelSnapshot.cs" />
     <Compile Include="Models\Clientes.cs" />
