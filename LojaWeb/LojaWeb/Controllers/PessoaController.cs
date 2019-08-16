@@ -18,5 +18,9 @@ namespace WebLoja2.Controllers
 
             return View();
         }
+        public ActionResult Cadastro()
+        {
+            return View();
+        }
     }
 }

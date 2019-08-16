@@ -223,11 +223,13 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dashboard.css" />
     <Content Include="Content\dashboard.js" />
     <Content Include="Content\jquery.js" />
     <Content Include="Content\login2.css" />
     <Content Include="Content\materialize.min.js" />
     <Content Include="Content\modulo.css" />
+    <Content Include="Content\navbar.css" />
     <Content Include="Content\pessoas.css" />
     <Content Include="Content\pessoas.js" />
     <Content Include="Global.asax" />
@@ -271,7 +273,9 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Modulos\Index.cshtml" />
-    <Content Include="Views\Pessoa\Index.cshtml" />
+    <Content Include="Views\Cadastro\Index.cshtml" />
+    <Content Include="Views\Pessoa\Cadastro.cshtml" />
+    <Content Include="Views\Produto\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />

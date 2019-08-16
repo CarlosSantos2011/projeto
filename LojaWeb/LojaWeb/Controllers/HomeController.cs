@@ -25,5 +25,10 @@ namespace WebLoja2.Controllers
             
             return View();
         }
+
+        public ActionResult Modulo()
+        {
+            return ViewBag();
+        }
     }
 }
