@@ -552,10 +552,6 @@ C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\bin\System.Web.Helpers.xml
 C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\bin\System.Web.Mvc.xml
 C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Razor.resources.dll
-C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Webpages.resources.dll
-C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Webpages.Deployment.resources.dll
-C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Webpages.Razor.resources.dll
-C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Helpers.resources.dll
 C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Mvc.resources.dll
 C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\obj\Debug\LojaWeb.csprojAssemblyReference.cache
 C:\Users\Game Room\Desktop\Projeto\LojaWeb\LojaWeb\obj\Debug\LojaWeb.csproj.CoreCompileInputs.cache
@@ -703,3 +699,98 @@ C:\Users\stag005\Desktop\New folder (2)\projeto\LojaWeb\LojaWeb\bin\roslyn\vbc.e
 C:\Users\stag005\Desktop\New folder (2)\projeto\LojaWeb\LojaWeb\bin\roslyn\vbc.rsp
 C:\Users\stag005\Desktop\New folder (2)\projeto\LojaWeb\LojaWeb\bin\roslyn\VBCSCompiler.exe
 C:\Users\stag005\Desktop\New folder (2)\projeto\LojaWeb\LojaWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\LojaWeb.dll.config
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\LojaWeb.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\LojaWeb.pdb
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Logging.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Options.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Win32.Primitives.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Remotion.Linq.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.AppContext.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Collections.Immutable.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Console.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Globalization.Calendars.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Interactive.Async.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.IO.Compression.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.IO.Compression.ZipFile.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.IO.FileSystem.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Net.Http.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Net.Sockets.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Text.Encodings.Web.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Helpers.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Mvc.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Razor.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Webpages.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Webpages.Razor.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Xml.ReaderWriter.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.Design.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.Relational.Design.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Logging.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Options.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Remotion.Linq.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Collections.Immutable.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Interactive.Async.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Text.Encodings.Web.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Razor.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Webpages.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Webpages.Razor.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Helpers.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\System.Web.Mvc.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Webpages.resources.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Webpages.Razor.resources.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\obj\Debug\LojaWeb.csprojAssemblyReference.cache
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\obj\Debug\LojaWeb.csproj.CoreCompileInputs.cache
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\obj\Debug\LojaWeb.csproj.CopyComplete
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\obj\Debug\LojaWeb.dll
+C:\Users\Game Room\Desktop\Projeto Benner\projeto\LojaWeb\LojaWeb\obj\Debug\LojaWeb.pdb

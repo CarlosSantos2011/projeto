@@ -17,9 +17,17 @@ namespace LojaWeb.Controllers
         {
             return RedirectToAction("Cadastro", "Pessoa");
         }
-        public ActionResult CadastroProduto()
+        public ActionResult ListaProduto()
         {
             return RedirectToAction("Index", "Produto");
+        }
+        public ActionResult Venda()
+        {
+            return RedirectToAction("Index", "Venda");
+        }
+        public ActionResult CompraProduto()
+        {
+            return RedirectToAction("Index", "Compra");
         }
     }
 }
