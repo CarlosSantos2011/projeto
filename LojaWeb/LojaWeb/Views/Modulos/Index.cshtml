@@ -1,4 +1,5 @@
 ﻿
+
 <html lang="pt-br">
 <head>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -66,26 +67,29 @@
                             <a class="nav-link" href="#">
 
                                 <span data-feather="shopping-cart"></span>
-
                                 Compra
                             </a>
                         </li>
+                       
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("CadastroPessoa", "Modulos")">
+                                    <span data-feather="users"></span>
+                                    Cadastro
+                                </a>
+
+                            </li>
+                    
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="users"></span>
-                                Cadastro
+                            <a class="nav-link" href="#" />
+                            <span data-feather="bar-chart-2"></span>
+                            Venda
                             </a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="bar-chart-2"></span>
-                                Venda
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link"  href="@Url.Action("CadastroProduto", "Modulos")">
                                 <span data-feather="layers"></span>
-                               Produtos
+                                Produtos
                             </a>
                         </li>
                     </ul>
