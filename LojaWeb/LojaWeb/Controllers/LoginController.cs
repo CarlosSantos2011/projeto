@@ -30,6 +30,11 @@ namespace WebLoja2.Controllers
             {
                 return RedirectToAction("Index");
             }
+            
+        }
+        public ActionResult Sair ()
+        {
+            return RedirectToAction("Index", "Login");
         }
     }
 }

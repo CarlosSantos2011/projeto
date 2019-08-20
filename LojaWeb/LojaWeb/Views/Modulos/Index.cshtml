@@ -2,6 +2,7 @@
 
 <html lang="pt-br">
 <head>
+
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="path/to/dist/feather.js"></script>
     <link rel="stylesheet" href="~/Content/materialize.min.js">
@@ -21,10 +22,15 @@
     <title> Dashboard - Worldcell</title>
     <link href="~/Content/jquery.js" rel="stylesheet" />
 
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
 
     <!-- Bootstrap core CSS -->
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+
+
+
 
 
     <style>
@@ -42,11 +48,11 @@
 </head>
 <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">WorldCell</a>
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="@Url.Action("Retorna", "Venda")">WorldCell</a>
         <input class="form-control form-control-dark w-100" type="text" placeholder="Procurar" aria-label="Search">
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" href="#">Sair</a>
+                <a class="nav-link" href="@Url.Action("Sair", "Login")">Sair</a>
             </li>
         </ul>
     </nav>
@@ -102,15 +108,25 @@
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Dashboard</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
-                        <div class="btn-group mr-2">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+
+
+
+                        <div class="col-md-12 mb-3">
+                            <div>
+                                <label for="Nome">Data</label>
+                                <span data-feather="calendar"> </span>
+                                <input type="date" class="form-control" id="data" placeholder="" value="" required>
+
+                            </div>
+
                         </div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                            <span data-feather="calendar"></span>
-                            Esta semana
-                        </button>
+
                     </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">
+                        Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
                 </div>
 
                 <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>

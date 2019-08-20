@@ -13,5 +13,9 @@ namespace LojaWeb.Controllers
         {
             return View();
         }
+        public ActionResult Retorna()
+        {
+            return RedirectToAction ("Index", "Modulos");
+        }
     }
 }
