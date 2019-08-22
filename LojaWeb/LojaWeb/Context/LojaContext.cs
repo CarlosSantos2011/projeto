@@ -19,8 +19,9 @@ namespace WebLoja2.Context
         public DbSet<Funcionario> Funcionario { get; set; }
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<VendaItem> ItensVendidos { get; set; }
-        public DbSet<Fornecedor> Compras { get; set; }
+        public DbSet<Compra> Compra { get; set; }
         public DbSet<CompraItem> ItensComprados { get; set; }
+        
        
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

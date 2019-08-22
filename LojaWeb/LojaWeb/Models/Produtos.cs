@@ -6,11 +6,11 @@ namespace WebLoja2.Models
 {
     public class Produtos
     {
-        public int Id { get; internal set; }
+        public int Id { get;  set; }
 
-        public string Modelo { get; internal set; }
+        public string Modelo { get;  set; }
 
-        public string Nome { get;  internal set; }        
+        public string Nome { get;   set; }        
 
         public double Valor { get; set; }
 

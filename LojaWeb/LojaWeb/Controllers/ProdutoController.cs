@@ -14,5 +14,11 @@ namespace WebLoja2.Controllers
         {
             return View();
         }
+        public ActionResult Form ()
+        {
+            ViewBag.Produtos = new ProdutosDAO().Lista();
+
+            return View();
+        }
     }
 }

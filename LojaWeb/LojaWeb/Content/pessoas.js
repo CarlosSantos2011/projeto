@@ -41,7 +41,8 @@
                 document.getElementById('rua').value="...";
                 document.getElementById('bairro').value="...";
                 document.getElementById('cidade').value="...";
-                document.getElementById('estado').value="...";
+                document.getElementById('estado').value = "...";
+                
 
                 //Cria um elemento javascript.
                 var script = document.createElement('script');

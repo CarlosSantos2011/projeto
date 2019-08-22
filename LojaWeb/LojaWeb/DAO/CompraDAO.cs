@@ -9,38 +9,38 @@ namespace WebLoja2.DAO
 {
     public class CompraDAO
     {
-        public void Adicionar(Fornecedor compra)
+        public void Adicionar(Compra compra)
         {
             using (var context = new LojaContext())
             {
-                context.Compras.Add(compra);
+                context.Compra.Add(compra);
 
                 context.SaveChanges();
             }
         }
-        public void Atualizar(Fornecedor compra)
+        public void Atualizar(Compra compra)
         {
             using (var context = new LojaContext())
             {
-                context.Compras.Update(compra);
+                context.Compra.Update(compra);
                 context.SaveChanges();
             }
 
         }
-        public IList<Fornecedor> Lista()
+        public IList<Compra> Lista()
         {
             using (var contexto = new LojaContext())
             {
-                return contexto.Compras.ToList();
+                return contexto.Compra.ToList();
             }
         }
 
 
-        public void Excluir(Fornecedor compra)
+        public void Excluir(Compra compra)
         {
             using (var context = new LojaContext())
             {
-                context.Compras.Remove(compra);
+                context.Compra.Remove(compra);
                 context.SaveChanges();
             }
         }
