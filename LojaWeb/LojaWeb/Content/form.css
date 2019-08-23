@@ -1,0 +1,16 @@
+﻿#form-produto {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#botao-novo-produto{
+    margin: 0 auto;
+    width: 10%;
+    margin-left:225px;
+}
+#botao-atualiza {
+    margin: 0 auto;
+    width: 10%;
+    margin-left: 225px;
+}

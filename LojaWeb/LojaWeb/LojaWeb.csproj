@@ -225,6 +225,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dashboard.css" />
     <Content Include="Content\dashboard.js" />
+    <Content Include="Content\form.css" />
     <Content Include="Content\jquery.js" />
     <Content Include="Content\login2.css" />
     <Content Include="Content\materialize.min.js" />
@@ -279,6 +280,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Venda\Index.cshtml" />
     <Content Include="Views\Compra\Index.cshtml" />
+    <Content Include="Views\Produto\Form.cshtml" />
+    <Content Include="Views\Produto\Cadastra.cshtml" />
+    <Content Include="Views\Relatorio\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -289,6 +293,7 @@
     <Compile Include="Controllers\ModulosController.cs" />
     <Compile Include="Controllers\PessoaController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
+    <Compile Include="Controllers\RelatorioController.cs" />
     <Compile Include="Controllers\VendaController.cs" />
     <Compile Include="DAO\ClientesDAO.cs" />
     <Compile Include="DAO\CompraDAO.cs" />

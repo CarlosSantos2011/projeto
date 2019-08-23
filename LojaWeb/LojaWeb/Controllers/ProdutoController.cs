@@ -16,9 +16,13 @@ namespace WebLoja2.Controllers
         }
         public ActionResult Form ()
         {
-            ViewBag.Produtos = new ProdutosDAO().Lista();
+            ViewBag.Produto = new ProdutosDAO().Lista();
 
             return View();
+        }
+        public ActionResult Cadastra()
+        {
+           return RedirectToAction ("Cadastra", "Produto");
         }
     }
 }

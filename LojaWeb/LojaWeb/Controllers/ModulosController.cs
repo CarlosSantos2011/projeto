@@ -19,7 +19,7 @@ namespace LojaWeb.Controllers
         }
         public ActionResult ListaProduto()
         {
-            return RedirectToAction("Index", "Produto");
+            return RedirectToAction("Form", "Produto");
         }
         public ActionResult Venda()
         {
@@ -29,6 +29,11 @@ namespace LojaWeb.Controllers
         {
             return RedirectToAction("Index", "Compra");
         }
+        public ActionResult Relatorios()
+        {
+            return RedirectToAction("Index", "Relatorio");
+        }
+
         
     }
 }
