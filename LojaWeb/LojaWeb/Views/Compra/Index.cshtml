@@ -4,6 +4,8 @@
 }
 <html>
 <head>
+    <link href="~/Content/form.css" rel="stylesheet" />
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="utf-8">
@@ -30,16 +32,68 @@
 
         </nav>
     </div>
-    <div class="py-5 text-center">
 
-       
-    </div>
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <span data-feather="home"></span>
+                        Dashboard <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Venda", "Modulos")">
+                        <span data-feather="shopping-cart"></span>
+                        Venda
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("CadastroPessoa", "Modulos")">
+                        <span data-feather="users"></span>
+                        Cadastro
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("CompraProduto", "Modulos")">
+                        <span data-feather="bar-chart-2"></span>
+                        Compra
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("ListaProduto", "Modulos")">
+                        <span data-feather="layers"></span>
+                        Produtos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Relatorios", "Modulos")">
+                        <span data-feather="bar-chart-2"></span>
+                        Relatórios
+                    </a>
+                </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"></h6>
+            <ul class="nav flex-column mb-2"></ul>
+        </div>
+    </nav>
    
-    <form>
-        <div class="container">
 
+    <div class="container">
+        <div class="py-2 text-center">
+
+
+        </div>
+        <form action="/RequisicaoCompra/RequisicaoCompra" id="form-compra">
             <h4 class="mb-3">Compra</h4>
-            <div class=" py-3"></div>
+            
             <div class="col-md-8 order-md-1">
                 <div class="row">
                     <div class="form-group col-md-6">
@@ -59,7 +113,12 @@
                 </div>
                 <div class="form-group">
                     <label for="inputEmail">Email do Fornecedor</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="" >
+                    @foreach(var fornecedor in ViewBag.Fornecedor)
+                    {
+                        @fornecedor.Nome;
+                    }
+
                 </div>
                 <div class="form-group">
                     <label for="inputAddress2">Observações</label>
@@ -86,8 +145,9 @@
 
                 <button type="submit" class="btn btn-primary">Fazer Pedido</button>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
+
 
 </body>
 </html>

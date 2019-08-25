@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebLoja2.Context;
 using WebLoja2.DAO;
 using WebLoja2.Models;
 
@@ -10,19 +11,18 @@ namespace WebLoja2.Controllers
 {
     public class LoginController : Controller
     {
-
         // GET: Login
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult Autentica(String Login, String Senha)
+        public ActionResult Autentica(String login, String senha)
         {
-           FuncionariosDAO dao = new FuncionariosDAO();
-           Funcionario funcionario= dao.Busca(Login, Senha);
-            if (funcionario != null)
+            UsuariosDAO dao = new UsuariosDAO();
+            Usuario usuario = dao.Busca(login, senha);
+            if (usuario != null)
             {
-                Session["usuarioLogado"] = funcionario;
+                Session["usuarioLogado"] = usuario;
                 return RedirectToAction("Index", "Modulos");
 
             }
@@ -30,11 +30,13 @@ namespace WebLoja2.Controllers
             {
                 return RedirectToAction("Index");
             }
-            
         }
-        public ActionResult Sair ()
+
+        public ActionResult Sair()
         {
             return RedirectToAction("Index", "Login");
         }
-    }
+        
+       
+   }
 }

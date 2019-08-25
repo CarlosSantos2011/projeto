@@ -223,6 +223,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cep.js" />
     <Content Include="Content\dashboard.css" />
     <Content Include="Content\dashboard.js" />
     <Content Include="Content\form.css" />
@@ -283,6 +284,8 @@
     <Content Include="Views\Produto\Form.cshtml" />
     <Content Include="Views\Produto\Cadastra.cshtml" />
     <Content Include="Views\Relatorio\Index.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\RequisicaoCompra\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -294,6 +297,8 @@
     <Compile Include="Controllers\PessoaController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
     <Compile Include="Controllers\RelatorioController.cs" />
+    <Compile Include="Controllers\RequisicaoCompraController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Controllers\VendaController.cs" />
     <Compile Include="DAO\ClientesDAO.cs" />
     <Compile Include="DAO\CompraDAO.cs" />
@@ -303,17 +308,15 @@
     <Compile Include="DAO\FuncionariosDAO.cs" />
     <Compile Include="DAO\PessoaDAO.cs" />
     <Compile Include="DAO\ProdutosDAO.cs" />
+    <Compile Include="DAO\UsuariosDAO.cs" />
     <Compile Include="DAO\VendaDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20190731112642_inicial.cs" />
-    <Compile Include="Migrations\20190731112642_inicial.designer.cs">
-      <DependentUpon>20190731112642_inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190822120252_compras.cs" />
-    <Compile Include="Migrations\20190822120252_compras.designer.cs">
-      <DependentUpon>20190822120252_compras.cs</DependentUpon>
+    <Compile Include="Helper\SendMail.cs" />
+    <Compile Include="Migrations\20190823222210_inicial.cs" />
+    <Compile Include="Migrations\20190823222210_inicial.designer.cs">
+      <DependentUpon>20190823222210_inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\LojaContextModelSnapshot.cs" />
     <Compile Include="Models\Clientes.cs" />
@@ -326,6 +329,7 @@
     <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\Pessoa.cs" />
     <Compile Include="Models\Produtos.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\Venda.cs" />
     <Compile Include="Models\VendaItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -348,6 +352,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="System\Data\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

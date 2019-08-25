@@ -22,5 +22,8 @@ namespace WebLoja2.Controllers
         {
             return View();
         }
+        
+
     }
+  
 }

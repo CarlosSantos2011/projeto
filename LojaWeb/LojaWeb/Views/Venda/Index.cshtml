@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-
+    <link rel="stylesheet" href="~/Content/form.css" />
 
 
     <!-- Principal CSS do Bootstrap -->
@@ -36,9 +36,59 @@
             </li>
         </ul>
     </nav>
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <span data-feather="home"></span>
+                        Dashboard <span class="sr-only">(current)</span>
+                    </a>
+                </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Venda", "Modulos")">
+                        <span data-feather="shopping-cart"></span>
+                        Venda
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("CadastroPessoa", "Modulos")">
+                        <span data-feather="users"></span>
+                        Cadastro
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("CompraProduto", "Modulos")">
+                        <span data-feather="bar-chart-2"></span>
+                        Compra
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("ListaProduto", "Modulos")">
+                        <span data-feather="layers"></span>
+                        Produtos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Relatorios", "Modulos")">
+                        <span data-feather="bar-chart-2"></span>
+                        Relatórios
+                    </a>
+                </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"></h6>
+            <ul class="nav flex-column mb-2"></ul>
+        </div>
+    </nav>
     <div class="container">
-        <div class="py-5 text-center">
+        <div class="py-2 text-center">
 
 
 
@@ -47,8 +97,9 @@
         <div class="row">
 
             <div class="col-md-8 order-md-1">
-                <h4 class="mb-3">Venda</h4>
-                <form class="needs-validation" novalidate>
+                
+                <form id="form-venda" class="needs-validation" novalidate>
+                    <h4 class="mb-3">Venda</h4>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="Nome">Produto</label>
@@ -59,7 +110,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="Valor">Valor</label>
-                            <input type="number"class="form-control" id="valor" placeholder="" value="" required>
+                            <input type="number" class="form-control" id="valor" placeholder="" value="" required>
 
                         </div>
                     </div>
@@ -88,7 +139,7 @@
                             </select>
 
                         </div>
-                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col-md-5 mb-3">
@@ -104,67 +155,67 @@
                         <div class="col-md-6 mb-3">
                             <label for="Nome">Data</label>
                             <input type="date" class="form-control" id="data" placeholder="" value="" required>
-                          
+
                         </div>
                     </div>
-                        <hr class="mb-4">
+                    <hr class="mb-4">
 
-                        <hr class="mb-4">
+                    <hr class="mb-4">
 
-                        <h4 class="mb-3">Pagamento</h4>
+                    <h4 class="mb-3">Pagamento</h4>
 
-                        <div class="d-block my-3">
-                            <div class="custom-control custom-radio">
-                                <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                                <label class="custom-control-label" for="credito">Cartão de crédito</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input id="debito" name="paymentMethod" type="radio" class="custom-control-input" required>
-                                <label class="custom-control-label" for="debito">Cartão de débito</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                                <label class="custom-control-label" for="paypal">Dinheiro</label>
-                               
-                                
-                            </div> 
-                            
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                            <label class="custom-control-label" for="credito">Cartão de crédito</label>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="cc-nome">Nome no cartão</label>
-                                <input type="text" class="form-control" id="cc-nome" placeholder="" required>
-                                <small class="text-muted">Nome completo, como mostrado no cartão.</small>
-                                <div class="invalid-feedback">
-                                    O nome que está no cartão é obrigatório.
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="cc-numero">Número do cartão de crédito</label>
-                                <input type="text" class="form-control" id="cc-numero" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    O número do cartão de crédito é obrigatório.
-                                </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debito" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debito">Cartão de débito</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="paypal">Dinheiro</label>
+
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-nome">Nome no cartão</label>
+                            <input type="text" class="form-control" id="cc-nome" placeholder="" required>
+                            <small class="text-muted">Nome completo, como mostrado no cartão.</small>
+                            <div class="invalid-feedback">
+                                O nome que está no cartão é obrigatório.
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-3 mb-3">
-                                <label for="cc-expiracao">Data de expiração</label>
-                                <input type="text" class="form-control" id="cc-expiracao" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Data de expiração é obrigatória.
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="cc-cvv">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Código de segurança é obrigatório.
-                                </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-numero">Número do cartão de crédito</label>
+                            <input type="text" class="form-control" id="cc-numero" placeholder="" required>
+                            <div class="invalid-feedback">
+                                O número do cartão de crédito é obrigatório.
                             </div>
                         </div>
-                        <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Efetuar Venda</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiracao">Data de expiração</label>
+                            <input type="text" class="form-control" id="cc-expiracao" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Data de expiração é obrigatória.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-cvv">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Código de segurança é obrigatório.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Efetuar Venda</button>
                 </form>
             </div>
         </div>

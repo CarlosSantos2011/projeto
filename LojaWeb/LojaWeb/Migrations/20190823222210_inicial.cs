@@ -112,6 +112,56 @@ namespace LojaWeb.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Usuarios",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Nome = table.Column<string>(nullable: true),
+                    Senha = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Usuarios", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Compra",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Data = table.Column<DateTime>(nullable: false),
+                    FornecedorId = table.Column<int>(nullable: true),
+                    FuncionarioId = table.Column<int>(nullable: true),
+                    Observacoes = table.Column<string>(nullable: true),
+                    ProdutoId = table.Column<int>(nullable: true),
+                    Valor = table.Column<double>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Compra", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Compra_Fornecedor_FornecedorId",
+                        column: x => x.FornecedorId,
+                        principalTable: "Fornecedor",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Compra_Funcionario_FuncionarioId",
+                        column: x => x.FuncionarioId,
+                        principalTable: "Funcionario",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Compra_Produtos_ProdutoId",
+                        column: x => x.ProdutoId,
+                        principalTable: "Produtos",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ItensComprados",
                 columns: table => new
                 {
@@ -209,6 +259,21 @@ namespace LojaWeb.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Compra_FornecedorId",
+                table: "Compra",
+                column: "FornecedorId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Compra_FuncionarioId",
+                table: "Compra",
+                column: "FuncionarioId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Compra_ProdutoId",
+                table: "Compra",
+                column: "ProdutoId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ItensComprados_CompraId",
                 table: "ItensComprados",
                 column: "CompraId");
@@ -247,6 +312,9 @@ namespace LojaWeb.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Compra");
+
+            migrationBuilder.DropTable(
                 name: "ItensComprados");
 
             migrationBuilder.DropTable(
@@ -254,6 +322,9 @@ namespace LojaWeb.Migrations
 
             migrationBuilder.DropTable(
                 name: "Enderecos");
+
+            migrationBuilder.DropTable(
+                name: "Usuarios");
 
             migrationBuilder.DropTable(
                 name: "ItensVendidos");

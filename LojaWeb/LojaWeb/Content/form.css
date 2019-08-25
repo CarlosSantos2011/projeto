@@ -1,4 +1,4 @@
-﻿#form-produto {
+﻿#form-produto, #form-venda, #form-relatorio, #form-cadastro{
     width: 80%;
     margin: auto;
     margin-top: 20px;
@@ -7,10 +7,20 @@
 #botao-novo-produto{
     margin: 0 auto;
     width: 10%;
-    margin-left:225px;
+    margin-left:20%;
 }
 #botao-atualiza {
     margin: 0 auto;
     width: 10%;
     margin-left: 225px;
+}
+#form-compra {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+#form-pessoas {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
 }

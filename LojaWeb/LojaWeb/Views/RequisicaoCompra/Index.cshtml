@@ -1,0 +1,94 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="@Url.Action("Retorna", "Venda")">WorldCell</a>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Procurar" aria-label="Search">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="@Url.Action("Sair", "Login")">Sair</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Venda", "Modulos")">
+                                <span data-feather="shopping-cart"></span>
+                                Venda
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("CadastroPessoa", "Modulos")">
+                                <span data-feather="users"></span>
+                                Cadastro
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("CompraProduto", "Modulos")">
+                                <span data-feather="bar-chart-2"></span>
+                                Compra
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("ListaProduto", "Modulos")">
+                                <span data-feather="layers"></span>
+                                Produtos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Relatorios", "Modulos")">
+                                <span data-feather="bar-chart-2"></span>
+                                Relatórios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("CadastroUsuario", "Modulos")">
+                                <span data-feather="users"></span>
+                                Cadastro
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("", "Modulos")">
+                                <span data-feather="bar-chart-2"></span>
+                                Compras em Aberto
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"></h6>
+                    <ul class="nav flex-column mb-2"></ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</body>
+</html>

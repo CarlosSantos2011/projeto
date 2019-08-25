@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LojaWeb.DAO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,8 +10,10 @@ namespace LojaWeb.Controllers
     public class CompraController : Controller
     {
         // GET: Compra
+       
         public ActionResult Index()
         {
+            ViewBag.Fornecedor = new FornecedorDAO().Lista();
             return View();
         }
 

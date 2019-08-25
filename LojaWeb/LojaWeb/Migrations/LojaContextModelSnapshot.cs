@@ -190,6 +190,20 @@ namespace LojaWeb.Migrations
                     b.ToTable("Produtos");
                 });
 
+            modelBuilder.Entity("WebLoja2.Models.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Nome");
+
+                    b.Property<string>("Senha");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuarios");
+                });
+
             modelBuilder.Entity("WebLoja2.Models.Venda", b =>
                 {
                     b.Property<int>("Id")

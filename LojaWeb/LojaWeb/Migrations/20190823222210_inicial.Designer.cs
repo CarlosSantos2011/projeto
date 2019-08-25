@@ -8,8 +8,8 @@ using WebLoja2.Context;
 namespace LojaWeb.Migrations
 {
     [DbContext(typeof(LojaContext))]
-    [Migration("20190822120252_compras")]
-    partial class compras
+    [Migration("20190823222210_inicial")]
+    partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -189,6 +189,20 @@ namespace LojaWeb.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Produtos");
+                });
+
+            modelBuilder.Entity("WebLoja2.Models.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Nome");
+
+                    b.Property<string>("Senha");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("WebLoja2.Models.Venda", b =>

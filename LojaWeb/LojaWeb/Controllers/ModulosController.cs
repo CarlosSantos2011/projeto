@@ -33,7 +33,10 @@ namespace LojaWeb.Controllers
         {
             return RedirectToAction("Index", "Relatorio");
         }
-
+        public ActionResult CadastroUsuario()
+        {
+            return RedirectToAction("Index", "Usuario"); 
+        }
         
     }
 }

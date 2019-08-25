@@ -17,12 +17,31 @@ namespace WebLoja2.Controllers
         public ActionResult Form ()
         {
             ViewBag.Produto = new ProdutosDAO().Lista();
+            
 
             return View();
         }
         public ActionResult Cadastra()
         {
            return RedirectToAction ("Cadastra", "Produto");
+        }
+        [HttpPost]
+        public ActionResult Adiciona(Produtos produto)
+        {
+            
+            ProdutosDAO dao = new ProdutosDAO();
+            dao.Adicionar(produto);
+
+            return RedirectToAction("Form");
+        }
+        [HttpPost]
+        public ActionResult Excluir(Produtos produto)
+        {
+          
+            ProdutosDAO dao = new ProdutosDAO();
+            dao.Excluir(produto);
+
+            return RedirectToAction("Form");
         }
     }
 }
