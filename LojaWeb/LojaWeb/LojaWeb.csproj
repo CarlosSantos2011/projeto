@@ -226,6 +226,7 @@
     <Content Include="Content\cep.js" />
     <Content Include="Content\dashboard.css" />
     <Content Include="Content\dashboard.js" />
+    <Content Include="Content\produto.js" />
     <Content Include="Content\form.css" />
     <Content Include="Content\jquery.js" />
     <Content Include="Content\login2.css" />
@@ -317,6 +318,10 @@
     <Compile Include="Migrations\20190823222210_inicial.cs" />
     <Compile Include="Migrations\20190823222210_inicial.designer.cs">
       <DependentUpon>20190823222210_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20190826114229_usuarios.cs" />
+    <Compile Include="Migrations\20190826114229_usuarios.designer.cs">
+      <DependentUpon>20190826114229_usuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\LojaContextModelSnapshot.cs" />
     <Compile Include="Models\Clientes.cs" />

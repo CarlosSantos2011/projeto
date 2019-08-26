@@ -18,6 +18,8 @@ namespace LojaWeb.DAO
                 context.SaveChanges();
             }
         }
+
+        
         public void Atualizar(Fornecedor fornecedor)
         {
             using (var context = new LojaContext())
@@ -27,11 +29,11 @@ namespace LojaWeb.DAO
             }
 
         }
-        public IList<Fornecedor> Lista()
+        public IList<Fornecedor> Lista(Fornecedor fornecedor)
         {
-            using (var contexto = new LojaContext())
+            using (var context = new LojaContext())
             {
-                return contexto.Fornecedor.ToList();
+                return context.Fornecedor.ToList();
             }
         }
 

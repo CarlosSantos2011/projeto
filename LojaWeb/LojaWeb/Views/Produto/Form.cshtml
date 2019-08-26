@@ -5,20 +5,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="~/Content/form.css" />
-    <link rel="stylesheet" href="~/Content/bootstrap.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="path/to/dist/feather.js"></script>
-    <link rel="stylesheet" href="~/Content/materialize.min.js">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="~/Content/dashboard.js" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
+    
 
     <!-- Bootstrap core CSS -->
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -101,6 +88,7 @@
 
 
     </div>
+    
     <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -111,7 +99,7 @@
 
                         <div class="col-md-8 order-md-1">
                             <h4 class="mb-3">Novo Produto</h4>
-                            <form action="/Produto/Adiciona" method="post" class="needs-validation" novalidate>
+                            <form action="/Produto/Adiciona" method="post" class="needs-validation" id="form-cadastro" novalidate>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="produto">Produto</label>
@@ -184,7 +172,7 @@
                 </div>
             </div>
     </div>
-    <form action="/Produto/Excluir" method="delete" id="form-produto">
+    <form id="form-produto">
 
 
         <table class="table table-hover table-condensed" id="form-produto">
@@ -197,13 +185,13 @@
                     <th>Modelo</th>
                     <th>Descrição</th>
                     <th>Valor</th>
-                    <th> Ações</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var produto in ViewBag.Produto)
                 {
-                    <tr >
+                    <tr id="ProdutoId_@produto.Id">
                         <td>@produto.Id</td>
                         <td>@produto.Nome</td>
                         <td>@produto.Categoria</td>
@@ -211,7 +199,7 @@
                         <td>@produto.Descricao</td>
                         <td>@produto.Valor</td>
                         <td>
-                            <input type="submit" class="btn btn-danger" value="Excluir"/>
+                            <input type="button" data-test="@produto.Id" class="btn btn-danger botaoExcluirProduto" value="Excluir"/>
                             <button type="button" class="btn btn-primary">Atualizar</button>
                         </td>
 

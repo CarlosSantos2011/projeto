@@ -1,8 +1,10 @@
-﻿using System;
+﻿using LojaWeb.Helper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebLoja2.Context;
 using WebLoja2.DAO;
 using WebLoja2.Models;
 
@@ -34,14 +36,32 @@ namespace WebLoja2.Controllers
 
             return RedirectToAction("Form");
         }
-        [HttpPost]
-        public ActionResult Excluir(Produtos produto)
+        
+        public void Notificacao (Produtos produtos)
         {
-          
-            ProdutosDAO dao = new ProdutosDAO();
-            dao.Excluir(produto);
+            if (produtos.Quantidade < 5){
 
-            return RedirectToAction("Form");
+                SendMail email = new SendMail();
+                email.Send();
+            }
+            else
+            {
+                
+            }
+
+
         }
+        public JsonResult Excluir(string ProdutoId)
+        {
+            
+            
+                var produto = new ProdutosDAO();
+                produto.ExcluirId(int.Parse(ProdutoId));
+                return Json(new { Mensagem = "Excluido com sucesso! " }, JsonRequestBehavior.AllowGet);
+
+            
+        
+        }
+
     }
 }

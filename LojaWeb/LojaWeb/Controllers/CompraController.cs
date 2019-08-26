@@ -9,11 +9,8 @@ namespace LojaWeb.Controllers
 {
     public class CompraController : Controller
     {
-        // GET: Compra
-       
-        public ActionResult Index()
+      public ActionResult Index()
         {
-            ViewBag.Fornecedor = new FornecedorDAO().Lista();
             return View();
         }
 

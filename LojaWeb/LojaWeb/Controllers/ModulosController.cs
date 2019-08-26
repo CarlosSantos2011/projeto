@@ -37,6 +37,10 @@ namespace LojaWeb.Controllers
         {
             return RedirectToAction("Index", "Usuario"); 
         }
+        public ActionResult ComprasEmAberto()
+        {
+            return RedirectToAction("Index", "RequisicaoCompra");
+        }
         
     }
 }
